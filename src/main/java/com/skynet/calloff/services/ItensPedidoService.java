@@ -66,10 +66,6 @@ public class ItensPedidoService {
     List<ItensPedido> itens = itensPedidoRepository.findByPedido(item);
 
     for(ItensPedido itemLista : itens){
-      Optional<Partnumber> partnumber =
-        partnumberRepository.findById(itemLista.getCodigo().getId());
-
-
 
     }
 
